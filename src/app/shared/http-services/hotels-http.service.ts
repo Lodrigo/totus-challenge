@@ -29,7 +29,8 @@ export class HotelsHttpService {
                 id: 3,
                 title: 'Emporiu Acapulco',
                 description: `O Emporio Acapulco está localizado à beira-mar de Acapulco, em frente ao 
-                Shopping Center Galerias Diana. A propriedade oferece spa, 3 piscinas ao ar livre e acesso à praia.`
+                Shopping Center Galerias Diana. A propriedade oferece spa, 3 piscinas ao ar livre e acesso
+                à praia. Venha conhecer onde a turma do chaves filmou 3 episódios.`
             }
         ]
     )
