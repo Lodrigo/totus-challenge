@@ -1,0 +1,16 @@
+<div class="container-fluid mb-5">
+    <div class="row back">
+        <div class="col-12 text-center" width="">
+            <img src="https://www.totvs.com/wp-content/uploads/2019/09/logo.png">
+        </div>
+        <div class="col-12 mt-4">
+            <app-input-search (filterExport)="filterExport($event)"></app-input-search>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <app-card-list [cardList]="cardList"(sendFather)="openModal($event)"></app-card-list>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="col-8 mx-auto">
+    <label class="result-text">Resultado da busca</label>
+    <div class="card border-primary mb-3" *ngFor="let card of cardList">
+        <div class="card-header">
+            <span class="title-card">{{card.title}}</span>
+            <a class="float-right action" (click)="showHidden(card)" >Ocultar detalhe da ação</a>
+        </div>
+        <div [class]="card.showDetails == true ? 'collapse' : 'collapse.show'">
+            <div class="card-body text-primary">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 col-sm-12">
+                        <p class="description">{{card.description}}</p>
+                    </div>
+                    <div [class]="card.showButton == true ? 'col-md-4 col-xs-12 col-sm-12' : 'col-12'" *ngIf="card.showButton">
+                        <button type="button" class="btn btn-info col-11 pull-right" (click)="sendToFather(card)">{{card.buttonText}}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
